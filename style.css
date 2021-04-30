@@ -1,0 +1,81 @@
+html {
+  background: url(images/flat\ surface.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+
+  /* Preserve aspet ratio */
+  /* min-width: 50%;
+  min-height: 50%; */
+}
+
+#rocket {
+  width: 300px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: launch 5s ease-in;
+}
+
+@keyframes launch {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(-50%, -100vh);
+  }
+}
+
+/* NOT NECESSARY */
+/* #rocket {
+  position: fixed;
+  top: 30%;
+  left: 38%;
+  margin-top: -50px;
+  margin-left: -50px;
+} */
+
+/* .launch {
+  position: relative;
+  padding: 15px 15px;
+  margin: 100px;
+  margin-bottom: 40px;
+  border: 2px solid;
+  min-width: 130px;
+} */
+
+/* .left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #fff;
+  margin: 200px;
+  padding: 15px 15px;
+  min-width: 130px;
+  background-color: green;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
